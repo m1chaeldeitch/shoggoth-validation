@@ -1,0 +1,20 @@
+{
+    "module": "m1",
+    "uid": "01_02",
+    "filepath_results": "/autograder/results/results.json",
+    "submission_location": "/autograder/submission/",
+    "project_location": "/autograder/source/src/main/java/edu/ser222/m01_02/",
+    "files_required":[
+        "CompletedMatrix.java"
+    ],
+    "files_optional":[
+    ],
+    "package_whitelist":[
+    ],
+    "assert_perf_constant":[
+    ],
+    "assert_perf_linear":[
+    ],
+    "assert_no_class_variables":[
+    ]
+}
