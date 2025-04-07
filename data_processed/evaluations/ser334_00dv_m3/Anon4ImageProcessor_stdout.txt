@@ -1,0 +1,153 @@
+-- The C compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Configuring done (0.2s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/ruben/Git/ser334/homework_projects/submission
+[ 25%] Building C object CMakeFiles/M3-Interface-Tests.dir/BMPHandler.c.o
+[ 50%] Building C object CMakeFiles/M3-Interface-Tests.dir/Image.c.o
+[ 75%] Building C object CMakeFiles/M3-Interface-Tests.dir/UnitTests.c.o
+[100%] Linking C executable bin/M3-Interface-Tests
+[100%] Built target M3-Interface-Tests
+Test project /home/ruben/Git/ser334/homework_projects/submission
+      Start  1: Test1_1_ReadingDIB,
+ 1/32 Test  #1: Test1_1_ReadingDIB, ..............................Subprocess aborted***Exception:   1.15 sec
+      Start  2: Test1_2_ReadingBMP,
+ 2/32 Test  #2: Test1_2_ReadingBMP, ..............................   Passed    0.00 sec
+      Start  3: Test1_3_ReadingDIB,
+ 3/32 Test  #3: Test1_3_ReadingDIB, ..............................   Passed    0.00 sec
+      Start  4: Test2_1_Read_Pixels,
+ 4/32 Test  #4: Test2_1_Read_Pixels, .............................   Passed    0.00 sec
+      Start  5: Test2_2_Read_Pixels,
+ 5/32 Test  #5: Test2_2_Read_Pixels, .............................   Passed    0.00 sec
+      Start  6: Test2_3_Read_Pixels,
+ 6/32 Test  #6: Test2_3_Read_Pixels, .............................   Passed    0.01 sec
+      Start  7: Test2_4_Read_Pixels,
+ 7/32 Test  #7: Test2_4_Read_Pixels, .............................   Passed    0.00 sec
+      Start  8: Test3_1_Write_Pixels_non_div_4_single,
+ 8/32 Test  #8: Test3_1_Write_Pixels_non_div_4_single, ...........   Passed    0.00 sec
+      Start  9: Test3_2_Write_Pixels_div_4_single,
+ 9/32 Test  #9: Test3_2_Write_Pixels_div_4_single, ...............   Passed    0.00 sec
+      Start 10: Test3_3_Write_Pixels_non_div_4_many,
+10/32 Test #10: Test3_3_Write_Pixels_non_div_4_many, .............   Passed    0.01 sec
+      Start 11: Test3_4_Write_Pixels_div_4_many,
+11/32 Test #11: Test3_4_Write_Pixels_div_4_many, .................   Passed    0.01 sec
+      Start 12: Test4_1_Image_Get_Width_width_div_4,
+12/32 Test #12: Test4_1_Image_Get_Width_width_div_4, .............   Passed    0.00 sec
+      Start 13: Test4_2_Image_Get_Width_width_non_div_4,
+13/32 Test #13: Test4_2_Image_Get_Width_width_non_div_4, .........   Passed    0.00 sec
+      Start 14: Test4_3_Image_Get_Height_div_4,
+14/32 Test #14: Test4_3_Image_Get_Height_div_4, ..................   Passed    0.01 sec
+      Start 15: Test4_4_Image_Get_Height_non_div_4,
+15/32 Test #15: Test4_4_Image_Get_Height_non_div_4, ..............   Passed    0.00 sec
+      Start 16: Test4_5_Image_Get_Pixels_neither_div_4,
+16/32 Test #16: Test4_5_Image_Get_Pixels_neither_div_4, ..........   Passed    0.00 sec
+      Start 17: Test4_6_Image_Get_Pixels_width_div_4,
+17/32 Test #17: Test4_6_Image_Get_Pixels_width_div_4, ............   Passed    0.00 sec
+      Start 18: Test4_7_Image_Get_Pixels_height_div_4,
+18/32 Test #18: Test4_7_Image_Get_Pixels_height_div_4, ...........   Passed    0.00 sec
+      Start 19: Test4_8_Image_Get_Pixels_both_div_4,
+19/32 Test #19: Test4_8_Image_Get_Pixels_both_div_4, .............   Passed    0.01 sec
+      Start 20: Test5_1_Image_color_shift_div_4_input_0,
+20/32 Test #20: Test5_1_Image_color_shift_div_4_input_0, .........   Passed    0.00 sec
+      Start 21: Test5_2_Image_color_shift_div_4_input_pos,
+21/32 Test #21: Test5_2_Image_color_shift_div_4_input_pos, .......   Passed    0.00 sec
+      Start 22: Test5_3_Image_color_shift_div_4_input_neg,
+22/32 Test #22: Test5_3_Image_color_shift_div_4_input_neg, .......   Passed    0.00 sec
+      Start 23: Test5_4_Image_color_shift_non_div_4_input_0,
+23/32 Test #23: Test5_4_Image_color_shift_non_div_4_input_0, .....   Passed    0.01 sec
+      Start 24: Test5_5_Image_color_shift_non_div_4_input_pos,
+24/32 Test #24: Test5_5_Image_color_shift_non_div_4_input_pos, ...   Passed    0.01 sec
+      Start 25: Test5_6_Image_color_shift_non_div_4_input_neg,
+25/32 Test #25: Test5_6_Image_color_shift_non_div_4_input_neg, ...   Passed    0.01 sec
+      Start 26: Test6_1_Image_bw_div_4,
+26/32 Test #26: Test6_1_Image_bw_div_4, ..........................   Passed    0.00 sec
+      Start 27: Test6_2_Image_bw_non_div_4,
+27/32 Test #27: Test6_2_Image_bw_non_div_4, ......................   Passed    0.00 sec
+      Start 28: Test6_3_Image_bw_channels,
+28/32 Test #28: Test6_3_Image_bw_channels, .......................   Passed    0.00 sec
+      Start 29: Test7_1_Image_scale_up_count_pix,
+29/32 Test #29: Test7_1_Image_scale_up_count_pix, ................   Passed    0.00 sec
+      Start 30: Test7_2_Image_scale_up_pix_data,
+30/32 Test #30: Test7_2_Image_scale_up_pix_data, .................   Passed    0.01 sec
+      Start 31: Test7_3_Image_scale_down_count_pix,
+31/32 Test #31: Test7_3_Image_scale_down_count_pix, ..............   Passed    0.00 sec
+      Start 32: Test7_4_Image_scale_down_pix_data,
+32/32 Test #32: Test7_4_Image_scale_down_pix_data, ...............   Passed    0.00 sec
+
+97% tests passed, 1 tests failed out of 32
+
+Total Test time (real) =   1.29 sec
+
+The following tests FAILED:
+	  1 - Test1_1_ReadingDIB, (Subprocess aborted)
+([True, True, True], ['Both images are the same length. Test: 69366, Correct: 69366', 'The BMP headers on both images match.', 'The DIB headers on both images match.']) (True, 'Pixels in test image are correct.')
+size correct: True
+([True, True, True], ['Both images are the same length. Test: 784950, Correct: 784950', 'The BMP headers on both images match.', 'The DIB headers on both images match.']) (True, 'Pixels in test image are correct.')
+size correct: True
+MEMORY MANAGMENT:: PROCESS SPAWNED
+MEMORY MANAGMENT:: OUTPUT GENERATED
+0
+
+
+[['14.4) Memory Allocation 4 [Hint: Uses Malloc for the pixel array on an enlarged output image.]', '14.5) Memory Allocation 5 [Hint: Frees all memory on close on an enlarged output image.]', '14.6) Memory Allocation 5 [Hint: Frees Correct Memory addresses on an enlarged output image.]'], [1, 1, 1], [14.4, 14.5, 14.6], [True, False, True], ['Allocated memory with malloc.', 'There are fewer frees than mallocs, you are leaving memory leaks that need to be cleaned up.', 'The addresses freed match the addresses allocated.']]
+[[['[1.1] DIB Headers IO [Hint: incorrectly sized DIB header struct (remove this)]', '[1.2] BMP Headers IO [Hint: incorrectly reading and/or writing of BMP header]', '[1.3] DIB Headers IO [Hint: incorrectly reading and/or writing of DIB header]', '[2.1] Reading pixels single row [Hint: Case when padding is needed]', '[2.2] Reading pixels single rows [Hint: Case when padding is not needed', '[2.3] Reading pixels many rows  [Hint: Case when padding is needed]', '[2.4] Reading pixels many rows [Hint: Case when padding is not needed]', '[3.1] Write pixels single row [Hint: Case when padding is needed]', '[3.2] Write pixels single row [Hint: Case when padding is not needed]', '[3.3] Write pixels many rows [Hint: Case when paddings is needed]', '[3.4] Write pixels many rows [Hint: Case when paddings is not needed]', '[4.1] Image -- getWidth [Hint: Case when padding is not needed]', '[4.2] Image -- getWidth [Hint: Case when there is padding present', '[4.3] Image -- getHeight [Hint: Case when there is no padding present]', '[4.4] Image -- getHeight [Hint: case when there is padding present]', '[4.5] Image -- getPixels [Hint: padding necessary]', '[4.6] Image -- getPixels [Hint: No padding needed]', '[4.7] Image -- getPixels [Hint: No padding needed]', '[4.8] Image -- getPixels [Hint: No padding needed]', '[5.1] Divisible by 4, shfiting 0. [Hint no changes to pixels]', '[5.2] Divisible by 4, shfiting positive. [Hint: Clamping and positive shifts]', '[5.3] Divisible by 4, shfiting negative. [Hint: Clamping and negative shifts]', '[5.4] Non-Divisible by 4, shfiting 0. [Hint no changes to pixels]', '[5.5] Non-Divisible by 4, shfiting positive. [Hint: Clamping and positive shifts]', '[5.6] Non-Divisible by 4, shfiting negative. [Hint: Clamping and negative shifts]', '[6.1] Image_BW divisble by 4 [Hint: basic functionality]', '[6.2] Image_BW -- non divisble by 4 [Hint: basic functionality]', '[6.3] Image_BW -- Setting channels [Hint: Properties of grayscale ]', '[7.1] Image -- Resize, number of pixels [Hint: scaling up]', '[7.2] Image -- Resize, pixel data [Hint: scaling up]', '[7.3] Image -- Resize, number of pixels [Hint: scaling down]', '[7.4] Image -- Resize, pixel data [Hint: scaling down]'], [0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2], [1.1, 1.2, 1.3, 2.1, 2.2, 2.3, 2.4, 3.1, 3.2, 3.3, 3.4, 4.1, 4.2, 4.3, 4.4, 4.5, 4.6, 4.7, 4.8, 5.1, 5.2, 5.3, 5.4, 5.5, 5.6, 6.1, 6.2, 6.3, 7.1, 7.2, 7.3, 7.4], [False, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True], ["[ERROR] (/home/ruben/Git/ser334/homework_projects/submission/UnitTests.c:314: errno: None) \n[Failed test] Expected 40, found 40.\nM3-Interface-Tests: /home/ruben/Git/ser334/homework_projects/submission/UnitTests.c:314: test_1_reading_DIB_correct_size: Assertion `0' failed.\n", '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '']], [['8.1) Program Input 1 [Hint: Default output file name is correct.]'], [1.5], [8.1], [True], ['Successfully created a correctly named file when no output file name was specified.']], [['8.2) Program Input 2 [Hint: Output file matches argument.]'], [2], [8.2], [True], ['Correctly created a file that matches the name of the specified output file.']], [['8.3) Program Input 3 [Hint: Input File Does not Exist.]'], [1.5], [8.3], [False], ['The program encountered an error: 1 Input command: /home/ruben/Git/ser334/homework_projects/submission/ImageProcessor thisFileDoesNotExist.bmp']], [['9.1) Program Input 4 [Hint: Color Arguments.]'], [1], [9.1], [True], ['Found correctly printed error message in program output']], [['9.2) Color Shift 1 [Hint: Basic Behavior Shifting Up.]'], [2], [9.2], [True], ['Correctly shifted the color of the image by the provided amount.']], [['9.3) Color Shift 2 [Hint: Basic Behavior Shifting Down.]'], [2], [9.3], [True], ['Correctly shifted the color of the image by the provided amount.']], [['9.4) Color Shift 3 [Hint: Shifting Multiple Colors Up.]'], [2], [9.4], [True], ['Correctly shifted the color of the image by the provided amount.']], [['9.5) Color Shift 4 [Hint: Shifting Multiple Colors Down.]'], [2], [9.5], [True], ['Correctly shifted the color of the image by the provided amount.']], [['10.1) Copy Image 1 [Hint: Copied Image matches size of original image.]', '10.2) Copy Image 2 [Hint: Copied Image has matching pixel array.]'], [1.25, 1.25], [10.1, 10.2], [True, True], ['Output image correctly matches the size of the input image.', 'Output image correctly contains the same pixels as the input image.']], [['11.1) Copy Image 3 [Hint: Copied Image matches size of original image on image with padding.]', '11.2) Copy Image 4 [Hint: Copied Image has matching pixel array on image with padding.]'], [1.25, 1.25], [11.1, 11.2], [True, True], ['Output image correctly matches the size of the input image.', 'Output image correctly contains the same pixels as the input image.']], [['12.1) Grayscale 1 [Hint: Basic Behavior.]'], [2.5], [12.1], [False], ['Did not correctly apply the grayscale filter. Error: Pixels in test image are incorrect.\nCommand: /home/ruben/Git/ser334/homework_projects/submission/ImageProcessor ttt.bmp -w -o testBMP.bmp']], [['12.2) Grayscale 2 [Hint: Grayscale applied before color shift.]'], [2.5], [12.2], [False], ['Did not correctly apply the grayscale filter before the color shift. Error: Pixels in test image are incorrect.\nCommand: /home/ruben/Git/ser334/homework_projects/submission/ImageProcessor ttt.bmp -w -r 209 -o testBMP.bmp']], [['13.1) Image Scaling 1 [Hint: Scaled up image has correct image size.]', '13.2) Image Scaling 2 [Hint: Scaled up image has correct pixel array.]'], [1.25, 1.25], [13.1, 13.2], [True, True], ['The resized image has the correct file size.', 'The resized image restructured the pixels correctly.']], [['13.4) Image Scaling 3 [Hint: Scaled down image has correct image size.]', '13.5) Image Scaling 4 [Hint: Scaled down image has correct pixel array.]'], [1.25, 1.25], [13.4, 13.5], [True, True], ['The resized image has the correct file size.', 'The resized image restructured the pixels correctly.']], [['14.1) Memory Allocation 1 [Hint: Uses Malloc for the pixel array.]', '14.2) Memory Allocation 2 [Hint: Frees all Memory on close.]', '14.3) Memory Allocation 3 [Hint: Frees Correct Memory addresses on close.]'], [2, 1, 1], [14.1, 14.2, 14.3], [True, False, True], ['Allocated memory with malloc.', 'There are fewer frees than mallocs, you are leaving memory leaks that need to be cleaned up.', 'The addresses freed match the addresses allocated.']], [['14.4) Memory Allocation 4 [Hint: Uses Malloc for the pixel array on an enlarged output image.]', '14.5) Memory Allocation 5 [Hint: Frees all memory on close on an enlarged output image.]', '14.6) Memory Allocation 5 [Hint: Frees Correct Memory addresses on an enlarged output image.]'], [1, 1, 1], [14.4, 14.5, 14.6], [True, False, True], ['Allocated memory with malloc.', 'There are fewer frees than mallocs, you are leaving memory leaks that need to be cleaned up.', 'The addresses freed match the addresses allocated.']]]
+0 [1.1] DIB Headers IO [Hint: incorrectly sized DIB header struct (remove this)] False
+2 [1.2] BMP Headers IO [Hint: incorrectly reading and/or writing of BMP header] True
+2 [1.3] DIB Headers IO [Hint: incorrectly reading and/or writing of DIB header] True
+2 [2.1] Reading pixels single row [Hint: Case when padding is needed] True
+2 [2.2] Reading pixels single rows [Hint: Case when padding is not needed True
+2 [2.3] Reading pixels many rows  [Hint: Case when padding is needed] True
+2 [2.4] Reading pixels many rows [Hint: Case when padding is not needed] True
+2 [3.1] Write pixels single row [Hint: Case when padding is needed] True
+2 [3.2] Write pixels single row [Hint: Case when padding is not needed] True
+2 [3.3] Write pixels many rows [Hint: Case when paddings is needed] True
+2 [3.4] Write pixels many rows [Hint: Case when paddings is not needed] True
+2 [4.1] Image -- getWidth [Hint: Case when padding is not needed] True
+2 [4.2] Image -- getWidth [Hint: Case when there is padding present True
+2 [4.3] Image -- getHeight [Hint: Case when there is no padding present] True
+2 [4.4] Image -- getHeight [Hint: case when there is padding present] True
+2 [4.5] Image -- getPixels [Hint: padding necessary] True
+2 [4.6] Image -- getPixels [Hint: No padding needed] True
+2 [4.7] Image -- getPixels [Hint: No padding needed] True
+2 [4.8] Image -- getPixels [Hint: No padding needed] True
+2 [5.1] Divisible by 4, shfiting 0. [Hint no changes to pixels] True
+2 [5.2] Divisible by 4, shfiting positive. [Hint: Clamping and positive shifts] True
+2 [5.3] Divisible by 4, shfiting negative. [Hint: Clamping and negative shifts] True
+2 [5.4] Non-Divisible by 4, shfiting 0. [Hint no changes to pixels] True
+2 [5.5] Non-Divisible by 4, shfiting positive. [Hint: Clamping and positive shifts] True
+2 [5.6] Non-Divisible by 4, shfiting negative. [Hint: Clamping and negative shifts] True
+2 [6.1] Image_BW divisble by 4 [Hint: basic functionality] True
+2 [6.2] Image_BW -- non divisble by 4 [Hint: basic functionality] True
+2 [6.3] Image_BW -- Setting channels [Hint: Properties of grayscale ] True
+2 [7.1] Image -- Resize, number of pixels [Hint: scaling up] True
+2 [7.2] Image -- Resize, pixel data [Hint: scaling up] True
+2 [7.3] Image -- Resize, number of pixels [Hint: scaling down] True
+2 [7.4] Image -- Resize, pixel data [Hint: scaling down] True
+1.5 8.1) Program Input 1 [Hint: Default output file name is correct.] True
+2 8.2) Program Input 2 [Hint: Output file matches argument.] True
+1.5 8.3) Program Input 3 [Hint: Input File Does not Exist.] False
+1 9.1) Program Input 4 [Hint: Color Arguments.] True
+2 9.2) Color Shift 1 [Hint: Basic Behavior Shifting Up.] True
+2 9.3) Color Shift 2 [Hint: Basic Behavior Shifting Down.] True
+2 9.4) Color Shift 3 [Hint: Shifting Multiple Colors Up.] True
+2 9.5) Color Shift 4 [Hint: Shifting Multiple Colors Down.] True
+1.25 10.1) Copy Image 1 [Hint: Copied Image matches size of original image.] True
+1.25 10.2) Copy Image 2 [Hint: Copied Image has matching pixel array.] True
+1.25 11.1) Copy Image 3 [Hint: Copied Image matches size of original image on image with padding.] True
+1.25 11.2) Copy Image 4 [Hint: Copied Image has matching pixel array on image with padding.] True
+2.5 12.1) Grayscale 1 [Hint: Basic Behavior.] False
+2.5 12.2) Grayscale 2 [Hint: Grayscale applied before color shift.] False
+1.25 13.1) Image Scaling 1 [Hint: Scaled up image has correct image size.] True
+1.25 13.2) Image Scaling 2 [Hint: Scaled up image has correct pixel array.] True
+1.25 13.4) Image Scaling 3 [Hint: Scaled down image has correct image size.] True
+1.25 13.5) Image Scaling 4 [Hint: Scaled down image has correct pixel array.] True
+2 14.1) Memory Allocation 1 [Hint: Uses Malloc for the pixel array.] True
+1 14.2) Memory Allocation 2 [Hint: Frees all Memory on close.] False
+1 14.3) Memory Allocation 3 [Hint: Frees Correct Memory addresses on close.] True
+1 14.4) Memory Allocation 4 [Hint: Uses Malloc for the pixel array on an enlarged output image.] True
+1 14.5) Memory Allocation 5 [Hint: Frees all memory on close on an enlarged output image.] False
+1 14.6) Memory Allocation 5 [Hint: Frees Correct Memory addresses on an enlarged output image.] True

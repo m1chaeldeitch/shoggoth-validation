@@ -1,0 +1,34 @@
+{
+    "module": "m12",
+    "uid": "04_02",
+    "filepath_results": "/autograder/results/results.json",
+    "submission_location": "/autograder/submission/",
+    "project_location": "/autograder/source/src/main/java/edu/ser222/m04_02/",
+    "files_required":[
+        "BetterDiGraph.java",
+        "IntuitiveTopological.java",
+        "CompletedMain.java"
+    ],
+    "files_optional":[
+    ],
+    "package_whitelist":[
+        "java.util.LinkedList",
+        "java.util.HashMap",
+        "java.util.NoSuchElementException",
+        "java.io.BufferedReader",
+        "java.io.BufferedWriter",
+        "java.io.File",
+        "java.io.FileInputStream",
+        "java.io.FileOutputStream",
+        "java.io.FileReader",
+        "java.io.IOException",
+        "java.io.InputStreamReader",
+        "java.io.OutputStreamWriter"
+    ],
+    "assert_perf_constant":[
+    ],
+    "assert_perf_linear":[
+    ],
+    "assert_no_class_variables":[
+    ]
+}

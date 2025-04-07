@@ -1,0 +1,205 @@
+/home/mike-jones/Documents/ASU/FURI/Autograder-Related/LocalGS/results
+Compilation error compiling BMPHandler.c: BMPHandler.c:18:39: warning: ‘struct BMP_Header’ declared inside parameter list will not be visible outside of this definition or declaration
+   18 | void readBMPHeader(FILE* file, struct BMP_Header* header)
+      |                                       ^~~~~~~~~~
+BMPHandler.c: In function ‘readBMPHeader’:
+BMPHandler.c:20:18: error: invalid use of undefined type ‘struct BMP_Header’
+   20 |     fread(&header->signature, sizeof(char)*2, 1, file);
+      |                  ^~
+BMPHandler.c:21:18: error: invalid use of undefined type ‘struct BMP_Header’
+   21 |     fread(&header->size, sizeof(int), 1, file);
+      |                  ^~
+BMPHandler.c:22:18: error: invalid use of undefined type ‘struct BMP_Header’
+   22 |     fread(&header->reserved1, sizeof(short), 1, file);
+      |                  ^~
+BMPHandler.c:23:18: error: invalid use of undefined type ‘struct BMP_Header’
+   23 |     fread(&header->reserved2, sizeof(short), 1, file);
+      |                  ^~
+BMPHandler.c:24:18: error: invalid use of undefined type ‘struct BMP_Header’
+   24 |     fread(&header->offset_pixel_array, sizeof(int), 1, file);
+      |                  ^~
+BMPHandler.c: At top level:
+BMPHandler.c:27:40: warning: ‘struct BMP_Header’ declared inside parameter list will not be visible outside of this definition or declaration
+   27 | void writeBMPHeader(FILE* file, struct BMP_Header* header)
+      |                                        ^~~~~~~~~~
+BMPHandler.c: In function ‘writeBMPHeader’:
+BMPHandler.c:29:19: error: invalid use of undefined type ‘struct BMP_Header’
+   29 |     fwrite(&header->signature, sizeof(char)*2, 1, file);
+      |                   ^~
+BMPHandler.c:30:19: error: invalid use of undefined type ‘struct BMP_Header’
+   30 |     fwrite(&header->size, sizeof(int), 1, file);
+      |                   ^~
+BMPHandler.c:31:19: error: invalid use of undefined type ‘struct BMP_Header’
+   31 |     fwrite(&header->reserved1, sizeof(short), 1, file);
+      |                   ^~
+BMPHandler.c:32:19: error: invalid use of undefined type ‘struct BMP_Header’
+   32 |     fwrite(&header->reserved2, sizeof(short), 1, file);
+      |                   ^~
+BMPHandler.c:33:19: error: invalid use of undefined type ‘struct BMP_Header’
+   33 |     fwrite(&header->offset_pixel_array, sizeof(int), 1, file);
+      |                   ^~
+BMPHandler.c: At top level:
+BMPHandler.c:37:39: warning: ‘struct DIB_Header’ declared inside parameter list will not be visible outside of this definition or declaration
+   37 | void readDIBHeader(FILE* file, struct DIB_Header* header)
+      |                                       ^~~~~~~~~~
+BMPHandler.c: In function ‘readDIBHeader’:
+BMPHandler.c:40:18: error: invalid use of undefined type ‘struct DIB_Header’
+   40 |     fread(&header->DIB_Header_Size, sizeof(int),1, file);
+      |                  ^~
+BMPHandler.c:41:18: error: invalid use of undefined type ‘struct DIB_Header’
+   41 |     fread(&header->iw, sizeof(int), 1, file);
+      |                  ^~
+BMPHandler.c:42:18: error: invalid use of undefined type ‘struct DIB_Header’
+   42 |     fread(&header->ih, sizeof(int), 1, file);
+      |                  ^~
+BMPHandler.c:43:18: error: invalid use of undefined type ‘struct DIB_Header’
+   43 |     fread(&header->Planes, sizeof(short), 1, file);
+      |                  ^~
+BMPHandler.c:44:18: error: invalid use of undefined type ‘struct DIB_Header’
+   44 |     fread(&header->BPS, sizeof(short), 1, file);
+      |                  ^~
+BMPHandler.c:45:18: error: invalid use of undefined type ‘struct DIB_Header’
+   45 |     fread(&header->Comp, sizeof(int), 1, file);
+      |                  ^~
+BMPHandler.c:46:18: error: invalid use of undefined type ‘struct DIB_Header’
+   46 |     fread(&header->ImagSz, sizeof(int), 1, file);
+      |                  ^~
+BMPHandler.c:47:15: error: invalid use of undefined type ‘struct DIB_Header’
+   47 |     if (header->ImagSz == 0)
+      |               ^~
+BMPHandler.c:49:15: error: invalid use of undefined type ‘struct DIB_Header’
+   49 |         header->ImagSz = header->ih * ((header->iw * 3 + (header->iw % 4)));
+      |               ^~
+BMPHandler.c:49:32: error: invalid use of undefined type ‘struct DIB_Header’
+   49 |         header->ImagSz = header->ih * ((header->iw * 3 + (header->iw % 4)));
+      |                                ^~
+BMPHandler.c:49:47: error: invalid use of undefined type ‘struct DIB_Header’
+   49 |         header->ImagSz = header->ih * ((header->iw * 3 + (header->iw % 4)));
+      |                                               ^~
+BMPHandler.c:49:65: error: invalid use of undefined type ‘struct DIB_Header’
+   49 |         header->ImagSz = header->ih * ((header->iw * 3 + (header->iw % 4)));
+      |                                                                 ^~
+BMPHandler.c:51:18: error: invalid use of undefined type ‘struct DIB_Header’
+   51 |     fread(&header->XPM, sizeof(int), 1, file);
+      |                  ^~
+BMPHandler.c:52:15: error: invalid use of undefined type ‘struct DIB_Header’
+   52 |     if (header->XPM != 0)
+      |               ^~
+BMPHandler.c:54:15: error: invalid use of undefined type ‘struct DIB_Header’
+   54 |         header->XPM = 0;
+      |               ^~
+BMPHandler.c:56:18: error: invalid use of undefined type ‘struct DIB_Header’
+   56 |     fread(&header->YPM, sizeof(int), 1, file);
+      |                  ^~
+BMPHandler.c:57:15: error: invalid use of undefined type ‘struct DIB_Header’
+   57 |     if (header->YPM != 0)
+      |               ^~
+BMPHandler.c:59:15: error: invalid use of undefined type ‘struct DIB_Header’
+   59 |         header->YPM = 0;
+      |               ^~
+BMPHandler.c:61:18: error: invalid use of undefined type ‘struct DIB_Header’
+   61 |     fread(&header->ColorsInColorTable, sizeof(int), 1, file);
+      |                  ^~
+BMPHandler.c:62:18: error: invalid use of undefined type ‘struct DIB_Header’
+   62 |     fread(&header->ImportantCC, sizeof(int), 1, file);
+      |                  ^~
+BMPHandler.c: At top level:
+BMPHandler.c:65:40: warning: ‘struct DIB_Header’ declared inside parameter list will not be visible outside of this definition or declaration
+   65 | void writeDIBHeader(FILE* file, struct DIB_Header* header)
+      |                                        ^~~~~~~~~~
+BMPHandler.c: In function ‘writeDIBHeader’:
+BMPHandler.c:69:19: error: invalid use of undefined type ‘struct DIB_Header’
+   69 |     fwrite(&header->DIB_Header_Size, sizeof(int),1, file);
+      |                   ^~
+BMPHandler.c:70:19: error: invalid use of undefined type ‘struct DIB_Header’
+   70 |     fwrite(&header->iw, sizeof(int), 1, file);
+      |                   ^~
+BMPHandler.c:71:19: error: invalid use of undefined type ‘struct DIB_Header’
+   71 |     fwrite(&header->ih, sizeof(int), 1, file);
+      |                   ^~
+BMPHandler.c:72:19: error: invalid use of undefined type ‘struct DIB_Header’
+   72 |     fwrite(&header->Planes, sizeof(short), 1, file);
+      |                   ^~
+BMPHandler.c:73:19: error: invalid use of undefined type ‘struct DIB_Header’
+   73 |     fwrite(&header->BPS, sizeof(short), 1, file);
+      |                   ^~
+BMPHandler.c:74:19: error: invalid use of undefined type ‘struct DIB_Header’
+   74 |     fwrite(&header->Comp, sizeof(int), 1, file);
+      |                   ^~
+BMPHandler.c:75:19: error: invalid use of undefined type ‘struct DIB_Header’
+   75 |     fwrite(&header->ImagSz, sizeof(int), 1, file);
+      |                   ^~
+BMPHandler.c:76:19: error: invalid use of undefined type ‘struct DIB_Header’
+   76 |     fwrite(&header->XPM, sizeof(int), 1, file);
+      |                   ^~
+BMPHandler.c:77:19: error: invalid use of undefined type ‘struct DIB_Header’
+   77 |     fwrite(&header->YPM, sizeof(int), 1, file);
+      |                   ^~
+BMPHandler.c:78:19: error: invalid use of undefined type ‘struct DIB_Header’
+   78 |     fwrite(&header->ColorsInColorTable, sizeof(int), 1, file);
+      |                   ^~
+BMPHandler.c:79:19: error: invalid use of undefined type ‘struct DIB_Header’
+   79 |     fwrite(&header->ImportantCC, sizeof(int), 1, file);
+      |                   ^~
+BMPHandler.c: At top level:
+BMPHandler.c:83:27: warning: ‘struct BMP_Header’ declared inside parameter list will not be visible outside of this definition or declaration
+   83 | void makeBMPHeader(struct BMP_Header* header, int width, int height)
+      |                           ^~~~~~~~~~
+BMPHandler.c: In function ‘makeBMPHeader’:
+BMPHandler.c:86:11: error: invalid use of undefined type ‘struct BMP_Header’
+   86 |     header->signature[0] = 'B';
+      |           ^~
+BMPHandler.c:87:11: error: invalid use of undefined type ‘struct BMP_Header’
+   87 |     header->signature[1] = 'M';
+      |           ^~
+BMPHandler.c:89:11: error: invalid use of undefined type ‘struct BMP_Header’
+   89 |     header->size = padded_width * height;
+      |           ^~
+BMPHandler.c:90:11: error: invalid use of undefined type ‘struct BMP_Header’
+   90 |     header->reserved1 = 0;
+      |           ^~
+BMPHandler.c:91:11: error: invalid use of undefined type ‘struct BMP_Header’
+   91 |     header->reserved2 = 0;
+      |           ^~
+BMPHandler.c:92:11: error: invalid use of undefined type ‘struct BMP_Header’
+   92 |     header->offset_pixel_array = 54;
+      |           ^~
+BMPHandler.c: At top level:
+BMPHandler.c:96:27: warning: ‘struct DIB_Header’ declared inside parameter list will not be visible outside of this definition or declaration
+   96 | void makeDIBHeader(struct DIB_Header* header, int width, int height)
+      |                           ^~~~~~~~~~
+BMPHandler.c: In function ‘makeDIBHeader’:
+BMPHandler.c:98:11: error: invalid use of undefined type ‘struct DIB_Header’
+   98 |     header->DIB_Header_Size=40;
+      |           ^~
+BMPHandler.c:99:11: error: invalid use of undefined type ‘struct DIB_Header’
+   99 |     header->iw = width;
+      |           ^~
+BMPHandler.c:100:11: error: invalid use of undefined type ‘struct DIB_Header’
+  100 |     header->ih = height;
+      |           ^~
+BMPHandler.c:101:11: error: invalid use of undefined type ‘struct DIB_Header’
+  101 |     header->Planes = 1;
+      |           ^~
+BMPHandler.c:102:11: error: invalid use of undefined type ‘struct DIB_Header’
+  102 |     header->BPS = 24;
+      |           ^~
+BMPHandler.c:103:11: error: invalid use of undefined type ‘struct DIB_Header’
+  103 |     header->Comp = 0;
+      |           ^~
+BMPHandler.c:104:11: error: invalid use of undefined type ‘struct DIB_Header’
+  104 |     header->ImagSz = height * ((width * 3 + (width % 4)));
+      |           ^~
+BMPHandler.c:105:11: error: invalid use of undefined type ‘struct DIB_Header’
+  105 |     header->XPM = 3780;
+      |           ^~
+BMPHandler.c:106:11: error: invalid use of undefined type ‘struct DIB_Header’
+  106 |     header->YPM = 3780;
+      |           ^~
+BMPHandler.c:107:11: error: invalid use of undefined type ‘struct DIB_Header’
+  107 |     header->ColorsInColorTable = 0;
+      |           ^~
+BMPHandler.c:108:11: error: invalid use of undefined type ‘struct DIB_Header’
+  108 |     header->ImportantCC = 0;
+      |           ^~
+

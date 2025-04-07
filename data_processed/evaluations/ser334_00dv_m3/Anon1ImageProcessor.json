@@ -1,0 +1,4 @@
+{
+    "output": "Error: Found Disallowed Libraries: <unistd.h>",
+    "score": 0
+}

@@ -1,0 +1,396 @@
+{
+    "tests": [
+        {
+            "max_score": 1.25,
+            "name": "10.1) Copy Image 1 [Hint: Copied Image matches size of original image.]",
+            "number": 10.1,
+            "output": "Output image correctly matches the size of the input image.",
+            "score": 1.25
+        },
+        {
+            "max_score": 1.25,
+            "name": "10.2) Copy Image 2 [Hint: Copied Image has matching pixel array.]",
+            "number": 10.2,
+            "output": "Output image correctly contains the same pixels as the input image.",
+            "score": 1.25
+        },
+        {
+            "max_score": 1.25,
+            "name": "11.1) Copy Image 3 [Hint: Copied Image matches size of original image on image with padding.]",
+            "number": 11.1,
+            "output": "Output image correctly matches the size of the input image.",
+            "score": 1.25
+        },
+        {
+            "max_score": 1.25,
+            "name": "11.2) Copy Image 4 [Hint: Copied Image has matching pixel array on image with padding.]",
+            "number": 11.2,
+            "output": "Output image correctly contains the same pixels as the input image.",
+            "score": 1.25
+        },
+        {
+            "max_score": 2.5,
+            "name": "12.1) Grayscale 1 [Hint: Basic Behavior.]",
+            "number": 12.1,
+            "output": "Did not correctly apply the grayscale filter. Error: Pixels in test image are incorrect.\nCommand: /home/ruben/Git/ser334/homework_projects/submission/ImageProcessor ttt.bmp -w -o testBMP.bmp",
+            "score": 0
+        },
+        {
+            "max_score": 2.5,
+            "name": "12.2) Grayscale 2 [Hint: Grayscale applied before color shift.]",
+            "number": 12.2,
+            "output": "Did not correctly apply the grayscale filter before the color shift. Error: Pixels in test image are incorrect.\nCommand: /home/ruben/Git/ser334/homework_projects/submission/ImageProcessor ttt.bmp -w -r 209 -o testBMP.bmp",
+            "score": 0
+        },
+        {
+            "max_score": 1.25,
+            "name": "13.1) Image Scaling 1 [Hint: Scaled up image has correct image size.]",
+            "number": 13.1,
+            "output": "The resized image has the correct file size.",
+            "score": 1.25
+        },
+        {
+            "max_score": 1.25,
+            "name": "13.2) Image Scaling 2 [Hint: Scaled up image has correct pixel array.]",
+            "number": 13.2,
+            "output": "The resized image restructured the pixels correctly.",
+            "score": 1.25
+        },
+        {
+            "max_score": 1.25,
+            "name": "13.4) Image Scaling 3 [Hint: Scaled down image has correct image size.]",
+            "number": 13.4,
+            "output": "The resized image has the correct file size.",
+            "score": 1.25
+        },
+        {
+            "max_score": 1.25,
+            "name": "13.5) Image Scaling 4 [Hint: Scaled down image has correct pixel array.]",
+            "number": 13.5,
+            "output": "The resized image restructured the pixels correctly.",
+            "score": 1.25
+        },
+        {
+            "max_score": 2,
+            "name": "14.1) Memory Allocation 1 [Hint: Uses Malloc for the pixel array.]",
+            "number": 14.1,
+            "output": "Allocated memory with malloc.",
+            "score": 2
+        },
+        {
+            "max_score": 1,
+            "name": "14.2) Memory Allocation 2 [Hint: Frees all Memory on close.]",
+            "number": 14.2,
+            "output": "There are fewer frees than mallocs, you are leaving memory leaks that need to be cleaned up.",
+            "score": 0
+        },
+        {
+            "max_score": 1,
+            "name": "14.3) Memory Allocation 3 [Hint: Frees Correct Memory addresses on close.]",
+            "number": 14.3,
+            "output": "The addresses freed match the addresses allocated.",
+            "score": 1
+        },
+        {
+            "max_score": 1,
+            "name": "14.4) Memory Allocation 4 [Hint: Uses Malloc for the pixel array on an enlarged output image.]",
+            "number": 14.4,
+            "output": "Allocated memory with malloc.",
+            "score": 1
+        },
+        {
+            "max_score": 1,
+            "name": "14.5) Memory Allocation 5 [Hint: Frees all memory on close on an enlarged output image.]",
+            "number": 14.5,
+            "output": "There are fewer frees than mallocs, you are leaving memory leaks that need to be cleaned up.",
+            "score": 0
+        },
+        {
+            "max_score": 1,
+            "name": "14.6) Memory Allocation 5 [Hint: Frees Correct Memory addresses on an enlarged output image.]",
+            "number": 14.6,
+            "output": "The addresses freed match the addresses allocated.",
+            "score": 1
+        },
+        {
+            "max_score": 1.5,
+            "name": "8.1) Program Input 1 [Hint: Default output file name is correct.]",
+            "number": 8.1,
+            "output": "Successfully created a correctly named file when no output file name was specified.",
+            "score": 1.5
+        },
+        {
+            "max_score": 2,
+            "name": "8.2) Program Input 2 [Hint: Output file matches argument.]",
+            "number": 8.2,
+            "output": "Correctly created a file that matches the name of the specified output file.",
+            "score": 2
+        },
+        {
+            "max_score": 1.5,
+            "name": "8.3) Program Input 3 [Hint: Input File Does not Exist.]",
+            "number": 8.3,
+            "output": "The program encountered an error: 1 Input command: /home/ruben/Git/ser334/homework_projects/submission/ImageProcessor thisFileDoesNotExist.bmp",
+            "score": 0
+        },
+        {
+            "max_score": 1,
+            "name": "9.1) Program Input 4 [Hint: Color Arguments.]",
+            "number": 9.1,
+            "output": "Found correctly printed error message in program output",
+            "score": 1
+        },
+        {
+            "max_score": 2,
+            "name": "9.2) Color Shift 1 [Hint: Basic Behavior Shifting Up.]",
+            "number": 9.2,
+            "output": "Correctly shifted the color of the image by the provided amount.",
+            "score": 2
+        },
+        {
+            "max_score": 2,
+            "name": "9.3) Color Shift 2 [Hint: Basic Behavior Shifting Down.]",
+            "number": 9.3,
+            "output": "Correctly shifted the color of the image by the provided amount.",
+            "score": 2
+        },
+        {
+            "max_score": 2,
+            "name": "9.4) Color Shift 3 [Hint: Shifting Multiple Colors Up.]",
+            "number": 9.4,
+            "output": "Correctly shifted the color of the image by the provided amount.",
+            "score": 2
+        },
+        {
+            "max_score": 2,
+            "name": "9.5) Color Shift 4 [Hint: Shifting Multiple Colors Down.]",
+            "number": 9.5,
+            "output": "Correctly shifted the color of the image by the provided amount.",
+            "score": 2
+        },
+        {
+            "max_score": 0,
+            "name": "[1.1] DIB Headers IO [Hint: incorrectly sized DIB header struct (remove this)]",
+            "number": 1.1,
+            "output": "[ERROR] (/home/ruben/Git/ser334/homework_projects/submission/UnitTests.c:314: errno: None) \n[Failed test] Expected 40, found 40.\nM3-Interface-Tests: /home/ruben/Git/ser334/homework_projects/submission/UnitTests.c:314: test_1_reading_DIB_correct_size: Assertion `0' failed.\n",
+            "score": 0
+        },
+        {
+            "max_score": 2,
+            "name": "[1.2] BMP Headers IO [Hint: incorrectly reading and/or writing of BMP header]",
+            "number": 1.2,
+            "output": "",
+            "score": 2
+        },
+        {
+            "max_score": 2,
+            "name": "[1.3] DIB Headers IO [Hint: incorrectly reading and/or writing of DIB header]",
+            "number": 1.3,
+            "output": "",
+            "score": 2
+        },
+        {
+            "max_score": 2,
+            "name": "[2.1] Reading pixels single row [Hint: Case when padding is needed]",
+            "number": 2.1,
+            "output": "",
+            "score": 2
+        },
+        {
+            "max_score": 2,
+            "name": "[2.2] Reading pixels single rows [Hint: Case when padding is not needed",
+            "number": 2.2,
+            "output": "",
+            "score": 2
+        },
+        {
+            "max_score": 2,
+            "name": "[2.3] Reading pixels many rows  [Hint: Case when padding is needed]",
+            "number": 2.3,
+            "output": "",
+            "score": 2
+        },
+        {
+            "max_score": 2,
+            "name": "[2.4] Reading pixels many rows [Hint: Case when padding is not needed]",
+            "number": 2.4,
+            "output": "",
+            "score": 2
+        },
+        {
+            "max_score": 2,
+            "name": "[3.1] Write pixels single row [Hint: Case when padding is needed]",
+            "number": 3.1,
+            "output": "",
+            "score": 2
+        },
+        {
+            "max_score": 2,
+            "name": "[3.2] Write pixels single row [Hint: Case when padding is not needed]",
+            "number": 3.2,
+            "output": "",
+            "score": 2
+        },
+        {
+            "max_score": 2,
+            "name": "[3.3] Write pixels many rows [Hint: Case when paddings is needed]",
+            "number": 3.3,
+            "output": "",
+            "score": 2
+        },
+        {
+            "max_score": 2,
+            "name": "[3.4] Write pixels many rows [Hint: Case when paddings is not needed]",
+            "number": 3.4,
+            "output": "",
+            "score": 2
+        },
+        {
+            "max_score": 2,
+            "name": "[4.1] Image -- getWidth [Hint: Case when padding is not needed]",
+            "number": 4.1,
+            "output": "",
+            "score": 2
+        },
+        {
+            "max_score": 2,
+            "name": "[4.2] Image -- getWidth [Hint: Case when there is padding present",
+            "number": 4.2,
+            "output": "",
+            "score": 2
+        },
+        {
+            "max_score": 2,
+            "name": "[4.3] Image -- getHeight [Hint: Case when there is no padding present]",
+            "number": 4.3,
+            "output": "",
+            "score": 2
+        },
+        {
+            "max_score": 2,
+            "name": "[4.4] Image -- getHeight [Hint: case when there is padding present]",
+            "number": 4.4,
+            "output": "",
+            "score": 2
+        },
+        {
+            "max_score": 2,
+            "name": "[4.5] Image -- getPixels [Hint: padding necessary]",
+            "number": 4.5,
+            "output": "",
+            "score": 2
+        },
+        {
+            "max_score": 2,
+            "name": "[4.6] Image -- getPixels [Hint: No padding needed]",
+            "number": 4.6,
+            "output": "",
+            "score": 2
+        },
+        {
+            "max_score": 2,
+            "name": "[4.7] Image -- getPixels [Hint: No padding needed]",
+            "number": 4.7,
+            "output": "",
+            "score": 2
+        },
+        {
+            "max_score": 2,
+            "name": "[4.8] Image -- getPixels [Hint: No padding needed]",
+            "number": 4.8,
+            "output": "",
+            "score": 2
+        },
+        {
+            "max_score": 2,
+            "name": "[5.1] Divisible by 4, shfiting 0. [Hint no changes to pixels]",
+            "number": 5.1,
+            "output": "",
+            "score": 2
+        },
+        {
+            "max_score": 2,
+            "name": "[5.2] Divisible by 4, shfiting positive. [Hint: Clamping and positive shifts]",
+            "number": 5.2,
+            "output": "",
+            "score": 2
+        },
+        {
+            "max_score": 2,
+            "name": "[5.3] Divisible by 4, shfiting negative. [Hint: Clamping and negative shifts]",
+            "number": 5.3,
+            "output": "",
+            "score": 2
+        },
+        {
+            "max_score": 2,
+            "name": "[5.4] Non-Divisible by 4, shfiting 0. [Hint no changes to pixels]",
+            "number": 5.4,
+            "output": "",
+            "score": 2
+        },
+        {
+            "max_score": 2,
+            "name": "[5.5] Non-Divisible by 4, shfiting positive. [Hint: Clamping and positive shifts]",
+            "number": 5.5,
+            "output": "",
+            "score": 2
+        },
+        {
+            "max_score": 2,
+            "name": "[5.6] Non-Divisible by 4, shfiting negative. [Hint: Clamping and negative shifts]",
+            "number": 5.6,
+            "output": "",
+            "score": 2
+        },
+        {
+            "max_score": 2,
+            "name": "[6.1] Image_BW divisble by 4 [Hint: basic functionality]",
+            "number": 6.1,
+            "output": "",
+            "score": 2
+        },
+        {
+            "max_score": 2,
+            "name": "[6.2] Image_BW -- non divisble by 4 [Hint: basic functionality]",
+            "number": 6.2,
+            "output": "",
+            "score": 2
+        },
+        {
+            "max_score": 2,
+            "name": "[6.3] Image_BW -- Setting channels [Hint: Properties of grayscale ]",
+            "number": 6.3,
+            "output": "",
+            "score": 2
+        },
+        {
+            "max_score": 2,
+            "name": "[7.1] Image -- Resize, number of pixels [Hint: scaling up]",
+            "number": 7.1,
+            "output": "",
+            "score": 2
+        },
+        {
+            "max_score": 2,
+            "name": "[7.2] Image -- Resize, pixel data [Hint: scaling up]",
+            "number": 7.2,
+            "output": "",
+            "score": 2
+        },
+        {
+            "max_score": 2,
+            "name": "[7.3] Image -- Resize, number of pixels [Hint: scaling down]",
+            "number": 7.3,
+            "output": "",
+            "score": 2
+        },
+        {
+            "max_score": 2,
+            "name": "[7.4] Image -- Resize, pixel data [Hint: scaling down]",
+            "number": 7.4,
+            "output": "",
+            "score": 2
+        }
+    ]
+}
