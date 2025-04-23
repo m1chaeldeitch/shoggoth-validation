@@ -210,9 +210,9 @@ def compute_proxies_m3_24fc(data):
     
     
     #4) Input Validation
-    t10_1 = was_test_passed_by_name(data, "10.1)") # "10.1) Program Input 4 [Hint: Color Arguments.]"
+    t16_1 = was_test_passed_by_name(data, "16.1)") # Program argument parsing [Hint: handle all permutations of argument ordering
     
-    if t10_1:
+    if t16_1:
         proxies += [4.0]
     else:
         proxies += [0.0]
@@ -343,7 +343,7 @@ def compute_proxies_m3_24fc(data):
     
     if t6_1 and t6_2 and t6_3 and t13_1 and t13_2:
         proxies += [5.0]
-    else if ((t6_1 and t6_2 and t6_3) or (t6_1 and t6_3 and t13_1) or
+    elif ((t6_1 and t6_2 and t6_3) or (t6_1 and t6_3 and t13_1) or
              (t6_2 and t6_3 and t13_1)):
         proxies += [2.5]
     else:
