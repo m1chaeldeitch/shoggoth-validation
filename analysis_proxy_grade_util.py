@@ -11,7 +11,8 @@ import math
 
 def get_test_case_by_name(data, target):
     for test in data["tests"]:
-        if target in test['name']:
+        test_name = test["name"]
+        if test_name.startswith(target):
             return test
 
     raise Exception("Unable to find test case.")
