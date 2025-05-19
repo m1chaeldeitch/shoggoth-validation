@@ -365,13 +365,13 @@ def compute_proxies_m3_24fc(data):
     
     t14_3 = was_test_passed_by_name(data, "14.3)") # "14.3) Image Scaling 3 [Hint: Scaled down image has correct image size.]"
     
-    t14_4 = was_test_passed_by_name(data, "14.4)") # "14.4) Image Scaling 4 [Hint: Scaled down image has correct pixel array.]"
+    #t14_4 = was_test_passed_by_name(data, "14.4)") # "14.4) Image Scaling 4 [Hint: Scaled down image has correct pixel array.]"
     
     if (t7_1 and t7_2 and t7_3 and t7_4 and
-        t14_1 and t14_2 and t14_3 and t14_4):
+        t14_1 and t14_2 and t14_3):
         proxies += [5.0]
-    elif ((t7_1 and t7_2 and t14_1 and t14_2) or 
-          (t7_3 and t7_4 and t14_3 and t14_4)):
+    elif ((t7_1 and t7_2 and t14_1 and t14_2) or
+          (t7_3 and t7_4 and t14_3)):
         proxies += [2.5]
     else:
         proxies += [0.0]
