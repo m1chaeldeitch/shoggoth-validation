@@ -353,11 +353,11 @@ def compute_proxies_m3_24fc(data):
     #9) Filter: Scaling
     t7_1 = was_test_passed_by_name(data, "7.1)") # "7.1) Image -- Resize, number of pixels [Hint: scaling up]"
 
-    t7_2 = was_test_passed_by_name(data, "7.2)") # "7.2) Image -- Resize, pixel data [Hint: scaling up]"
+    #t7_2 = was_test_passed_by_name(data, "7.2)") # "7.2) Image -- Resize, pixel data [Hint: scaling up]"
     
     t7_3 = was_test_passed_by_name(data, "7.3)") # "7.3) Image -- Resize, number of pixels [Hint: scaling down]"
     
-    t7_4 = was_test_passed_by_name(data, "7.4)") # "7.4) Image -- Resize, pixel data [Hint: scaling down]"
+   #t7_4 = was_test_passed_by_name(data, "7.4)") # "7.4) Image -- Resize, pixel data [Hint: scaling down]"
     
     t14_1 = was_test_passed_by_name(data, "14.1)") # "14.1) Image Scaling 1 [Hint: Scaled up image has correct image size.]"
     
@@ -367,11 +367,11 @@ def compute_proxies_m3_24fc(data):
     
     #t14_4 = was_test_passed_by_name(data, "14.4)") # "14.4) Image Scaling 4 [Hint: Scaled down image has correct pixel array.]"
     
-    if (t7_1 and t7_2 and t7_3 and t7_4 and
+    if (t7_1 and t7_3 and
         t14_1 and t14_2 and t14_3):
         proxies += [5.0]
-    elif ((t7_1 and t7_2 and t14_1 and t14_2) or
-          (t7_3 and t7_4 and t14_3)):
+    elif ((t7_1 and t14_1 and t14_2) or
+          (t7_3 and t14_3)):
         proxies += [2.5]
     else:
         proxies += [0.0]
